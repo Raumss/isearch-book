@@ -91,28 +91,6 @@ Safari 开发者工具支持直接调试 Web Extension：
 2. Content Script 日志在页面的「控制台」标签页中查看
 3. 修改 `extension/` 下的文件后，在 Safari 扩展设置中点击「重新载入」即可生效
 
----
-
-## 自定义搜索引擎
-
-编辑 `extension/content.js` 顶部的 `SEARCH_ENGINES` 数组即可添加/修改搜索引擎：
-
-```javascript
-const SEARCH_ENGINES = [
-  {
-    name: 'Z-Library',
-    icon: '📚',
-    buildUrl: (q) => `https://z-lib.gs/s/${encodeURIComponent(q)}`
-  },
-  {
-    name: "Anna's Archive",
-    icon: '🔍',
-    buildUrl: (q) => `https://annas-archive.org/search?q=${encodeURIComponent(q)}`
-  }
-];
-```
-
-> ⚠️ Z-Library 域名经常变化，如遇无法访问请更新 URL。
 
 ---
 
