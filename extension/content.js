@@ -9,7 +9,7 @@
     },
     {
       name: "Anna's Archive",
-      buildUrl: (q) => `https://annas-archive.org/search?q=${encodeURIComponent(q)}`
+      buildUrl: (q) => `https://annas-archive.li/search?q=${encodeURIComponent(q)}`
     }
   ];
 
